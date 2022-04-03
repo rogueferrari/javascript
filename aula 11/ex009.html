@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País que Mora</title>
+</head>
+<body>
+    <h1>País em que reside</h1>
+    Em qual país está atualmente? <input type="text" name="txt" id="txt">
+    <input type="button" value="OK" onclick="informar()">
+    <div id='res'>
+        
+    </div>
+    <script>
+        function informar () {
+            var p = window.document.querySelector('input#txt')
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>Você mora no ${p.value}</p>`
+            if (p.value !== 'BRASIL' && p.value !== 'Brasil' && p.value !== 'brasil') {
+             res.innerHTML += `<p>Você é Estrangeiro!</p>`
+            } else {
+               res.innerHTML += `<p>Você é brasileiro!!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

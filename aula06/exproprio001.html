@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+            font: normal 10pt color white
+              }
+        input#pkut{
+            background-color: rgb(247, 247, 59);
+            
+            border-radius: 40px;
+        }
+        input#crtat{
+            background-color: rgb(109, 211, 109);
+            
+            border-radius: 40px;
+        }
+        input#cmdrt{
+            background-color: rgb(243, 122, 122);
+            border-radius: 40px;
+        }
+        input{
+           margin-left: 80px;
+           margin-top: 30px;
+        }
+        h1{
+            margin-left: 30px;
+            border-style: double;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Cor de fundo depende do Pokemon escolhido</h1>
+    <input type= 'button' value='Pikachu' id= 'pkut' onclick='Informar()'>
+    <input type="button" value="Chicorita" id="crtat" onclick="Informar()">
+    <input type="button" value="Charmander" id="cmdrt" onclick="Informar()">
+
+<script>
+ var pku = window.document.querySelector('input#pkut')
+ var crta = window.document.querySelector('input#crtat')
+ var cmdr = window.document.querySelector('input#cmdrt')
+ pku.addEventListener('click', clicar)
+ crta.addEventListener('click', clicarr)
+ cmdr.addEventListener('click', clicarrr)
+ function clicar () {
+    window.document.body.style.backgroundColor = 'rgb(247, 247, 59)'
+    }
+    function clicarr () {
+        window.document.body.style.backgroundColor = 'rgb(109, 211, 109)'
+    }
+    function clicarrr () {
+        window.document.body.style.backgroundColor = 'rgb(243, 122, 122)'
+    }
+</script> 
+</body>
+</html>
