@@ -1,6 +1,8 @@
 body{
     background-color: rgb(130, 236, 236);
-    
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
 }
 
 div#tit {
@@ -13,8 +15,7 @@ div#tit {
 
 div#info {
     text-align: center;
-    margin-left: 500px;
-    margin-right: 500px;
+   
 }
 
 p {
